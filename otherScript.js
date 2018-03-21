@@ -1,4 +1,5 @@
 
+
 var pathnameurl = new URL(url).pathname;
 
 //console.log(pathname);
@@ -17,9 +18,14 @@ for(i; i < strLength; i++) {
 
 var tags = document.querySelectorAll('article .post-content a');
 for (i = 0; i < tags.length; i++) {
-        var link = tags[i].href;
+  var link = tags[i].href+"?utm_campaign=mcmc-"+pathnameurl;
+   
+     tags[i].href = link;
 		
-//	console.log(link);
+		
+	console.log(link);
         if (url.indexOf(link) != -1) {}
     }
+
+
 
