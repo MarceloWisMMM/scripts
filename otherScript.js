@@ -1,17 +1,17 @@
 
-var pathname = new URL(url).pathname;
+var pathnameurl = new URL(url).pathname;
 
-console.log(pathname);
+//console.log(pathname);
 
 
 var i = 0;
-var strLength = pathname.length;
+var strLength = pathnameurl.length;
  
 for(i; i < strLength; i++) {
 
- pathname = pathname.replace("/", "");
+ pathnameurl = pathnameurl.replace("/", "");
 }
-console.log(pathname);
+//console.log(pathname);
 
 // Procura os hrefs
 
@@ -19,7 +19,7 @@ var tags = document.querySelectorAll('article .post-content a');
 for (i = 0; i < tags.length; i++) {
         var link = tags[i].href;
 		
-	console.log(link);
+//	console.log(link);
         if (url.indexOf(link) != -1) {}
     }
 
