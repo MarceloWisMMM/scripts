@@ -23,7 +23,7 @@ for (i = 0; i < tags.length; i++) {
      tags[i].href = link;
 		
 		
-	console.log(link);
+//	console.log(link);
         if (url.indexOf(link) != -1) {}
     }
 
